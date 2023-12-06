@@ -101,7 +101,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
   .log-button {
-    background-color: #0f04aa;
+    background-color: #036;
     color: white;
     height: 30px;
     padding: 10px;
@@ -269,8 +269,8 @@ input[type=text], input[type=password] {
     height: auto;
   }
   .contact-button{
-    background-color: #0f04aa;
-    color: white;
+    background-color: #036a;
+    color:whitesmoke;
     height: 50px;
     padding: 10px;
     border: none;
