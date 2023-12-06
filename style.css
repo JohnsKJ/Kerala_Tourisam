@@ -268,5 +268,22 @@ input[type=text], input[type=password] {
     width: 100%;
     height: auto;
   }
+  .contact-button{
+    background-color: #0f04aa;
+    color: white;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid lightblue;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .control-labe{
+    color: #036;
+    font-size: 17px;
+    font-weight: bold;
+  }
 
 
