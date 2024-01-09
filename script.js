@@ -26,7 +26,7 @@ $(function(){
           password2:{
               required:true,
               equalTo:"#password",
-              canumltrp:true
+              
           }
       },
       messages:{
@@ -54,7 +54,7 @@ $(function(){
           password2:{
               required:'Conform password reqired',
               equalTo:'Password mmismatch',
-              canumltrp:'min 1 uppercase,number,lowercase required'
+              
           }
       }       
   })
@@ -82,21 +82,26 @@ $(function(){
       rules:{
           username:{
               required:true,
-              lettersonly:true
+              lettersonly:true,
+              minlength:4
+
           },
           password1:{
               required:true,
-              all:true
+              all:true,
+              canumltrp:'Password mismatch'
           },
       },
       messages:{
           username:{
               required:'username requied',
-              lettersonly:'invalid name'  
+              lettersonly:'invalid name',
+              minlength:'Atleast 4 letters required' 
           },
           password1:{
               required:'Password required',
-              all:'Space is not allowed'
+              all:'Space is not allowed',
+              canumltrp:'Password mismatch'
           },
       }       
   })
@@ -105,5 +110,8 @@ $(function(){
   });
   jQuery.validator.addMethod('all', function(value, element) {
       return /^[^-\s][a-zA-Z0-9_\s-]+$/.test(value);
+  });
+  jQuery.validator.addMethod('canumltrp', function(value, element) {
+    return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/.test(value);
   });
 })
