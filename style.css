@@ -6,9 +6,7 @@
 #header{
     background-color: rgba(0, 57, 115, 1);
     width: 100%;
-    height: auto;
-    position: relative;
-    
+    height: auto; 
 }
 /*..brand image style..*/
 .braand-image{
@@ -50,7 +48,7 @@ h2{
   font-weight: bold;
 
 }
-.bg{
+.bg-one{
   background-color:rgba(0, 57, 115, 1); 
 }
 .distric-style{
@@ -67,9 +65,38 @@ smal{
   color: #232323
   
 }
+/*login signup style*/
+.error{
+  color: red;
+}
+.bg{
+  background: #ABD6E5;
+  height: 35rem;
+  border-radius: 10px;
+}
+.main-size{
+  height: 50rem;
+}
+.main-size-sign{
+  height: 60rem;
+}
+.bg-sign{
+  background: #ABD6E5;
+  height: 50rem;
+  border-radius: 10px;
+}
 /*..login button and signin button style..*/
+.log-Button{
+  background:none;
+  padding: 10px;
+  border: none;
+  width: 80px;
+  color: #FFF;
+  font-weight: bold;
+  background-color:rgba(0, 57, 115, 1); 
+}
 .bg-log-text{
-  background-color: #e3e7f1;
+  background-color:none;
 }
 .header-Button{
     width: 100%;
@@ -87,46 +114,6 @@ smal{
 .form-group label{
     color: red;
 }
-/*login form styles fro w3school*/
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  /* Set a style for all buttons */
-  .log-button {
-    background-color: #036;
-    color: white;
-    height: 30px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border: 1px solid lightblue;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Extra styles for the cancel button */
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  /* Center the image and position the close button */
   .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
@@ -165,7 +152,7 @@ input[type=text], input[type=password] {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: aqua;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -176,15 +163,42 @@ input[type=text], input[type=password] {
     position: absolute;
     right: 25px;
     top: 0;
-    color: #000;
+    color:red;
     font-size: 35px;
     font-weight: bold;
   }
   
   .close:hover,
   .close:focus {
-    color: red;
+    color: white;
     cursor: pointer;
+  }
+
+  /*login singup button */
+
+  .cancel-butn{
+    background: red;
+    border: 1px solid white;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+  }
+  .bgn{
+    color: aqua;
+  }
+  .backgroundd{
+    background:#ABD6E5;
+  }
+
+  /*login signup button change*/
+  .Log-Button{
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color:rgba(0, 57, 115, 1); 
   }
   
   /* Add Zoom Animation */
@@ -209,14 +223,11 @@ input[type=text], input[type=password] {
        display: block;
        float: none;
     }
-    .cancelbtn {
-       width: 100%;
-    }
   }
   /*header section toggle button style*/
   .toggli{
-    width: 60ox;
-    height: 40px;
+    width: 30ox;
+    height: 20px;
   }
   /*.Section-Two.*/
   .bg-two{
